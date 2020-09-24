@@ -28,7 +28,7 @@ public class Testing {
         catch(IOException e) {
             System.out.print(e);
         }
-        label1.setSize(w, h);
+        label1.setSize(w, h - 100);
         dimg = img.getScaledInstance(label1.getWidth(), label1.getHeight(),Image.SCALE_SMOOTH);
         c = new ImageIcon(dimg);
         ac = new AlphaIcon(c, (float)1.0);
@@ -49,6 +49,6 @@ public class Testing {
         f.add(label2);
         f.add(label1);
         f.setVisible(true);
-        f.setSize(w, h + 10);
+        f.setSize(w + 10, h + 10);
     }
 }
